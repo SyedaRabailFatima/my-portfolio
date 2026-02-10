@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.webp" alt="Nikola Dikliev" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Nikola Dikliev">Nikola Dikliev</h1>
+
+          <p class="title">Web Designer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:dikliev.n@gmail.com" class="contact-link">dikliev.n@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+359988945416" class="contact-link">+359988945416</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1998-03-23">March 23, 1998</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Plovdiv, Bulgaria</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          
+
+         <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a results-driven Web and Graphic Designer with a strategic marketing mindset, specializing in e-commerce solutions. 
+            My core expertise lies in building high-performing websites using WordPress and OpenCart, 
+            with a proven ability to quickly master new platforms like Shopify to meet project needs.
+          </p>
+
+          <p>
+            I bridge the gap between aesthetics and functionality by utilizing professional tools like CorelDraw and Photoshop for design, and CapCut for engaging marketing videos. 
+            I am also highly proficient in leveraging AI tools to generate cutting-edge creatives and video content, ensuring a modern and efficient workflow.
+          </p>
+          
+          <p>My focus is always on the business goal: creating digital experiences that are not only visually stunning but also strategically designed to drive online sales and growth.
+          </p>
+        
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Design & Development</h4>
+
+                <p class="service-item-text">
+                  Professional websites built with WordPress and OpenCart, focused on performance and user experience.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Graphic Design & Branding</h4>
+
+                <p class="service-item-text">
+                  High-quality visual identity and marketing materials created with CorelDraw and Photoshop.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI-Driven Creatives</h4>
+
+                <p class="service-item-text">
+                  Leveraging cutting-edge AI tools to generate unique visual content, imagery, and innovative design assets.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Marketing & Strategy</h4>
+
+                <p class="service-item-text">
+                  Strategic video content and social media ads created with CapCut, designed to drive engagement and sales.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+<section class="testimonials">
+  <h3 class="h3 testimonials-title">Software & Tools</h3>
+
+  <ul class="testimonials-list has-scrollbar">
+
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/wordpress-icon.svg" alt="WordPress" width="40" data-testimonials-avatar>
+        </figure>
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>WordPress & OpenCart</h4>
+        <div class="testimonials-text" data-testimonials-text>
+          <p>Expertise in building scalable e-commerce stores and functional websites tailored for business growth and sales.</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/photoshop-icon.svg" alt="Photoshop" width="40" data-testimonials-avatar>
+        </figure>
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>Adobe Photoshop</h4>
+        <div class="testimonials-text" data-testimonials-text>
+          <p>Professional photo editing, web assets creation, and raster design for high-end digital marketing materials.</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/coreldraw-icon.svg" alt="CorelDraw" width="40" data-testimonials-avatar>
+        </figure>
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>CorelDraw</h4>
+        <div class="testimonials-text" data-testimonials-text>
+          <p>Primary tool for vector branding, logo design, and preparing complex print-ready files for various industries.</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="testimonials-item">
+      <div class="content-card" data-testimonials-item>
+        <figure class="testimonials-avatar-box">
+          <img src="./assets/images/ai-icon.svg" alt="AI Tools" width="40" data-testimonials-avatar>
+        </figure>
+        <h4 class="h4 testimonials-item-title" data-testimonials-title>AI & Video Tools</h4>
+        <div class="testimonials-text" data-testimonials-text>
+          <p>Utilizing CapCut and advanced AI models to generate innovative video content and high-converting creative assets.</p>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</section>
+
+
+<div class="modal-container" data-modal-container>
+
+  <div class="overlay" data-overlay></div>
+
+  <section class="testimonials-modal">
+
+    <button class="modal-close-btn" data-modal-close-btn>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img src="./assets/images/avatar-1.png" alt="Software Icon" width="80" data-modal-img>
+      </figure>
+
+      </div>
+
+    <div class="modal-content">
+
+      <h4 class="h3 modal-title" data-modal-title>Software Name</h4>
+
+      <div data-modal-text>
+        <p>
+          The description of your skills and tools will appear here.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://famatelbulgaria.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/Logo-1.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://rimplovdiv.com/" target="_blank" rel="noopener noreferrer"> 
+                <img src="./assets/images/Logo-2.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://ofipro.bg/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/logo-3.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://slot.bg/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/Logo-4.png" alt="client logo">
+              </a>
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tsanko Lavrenov National High School of Fine Arts</h4>
+
+              <span>2012 — 2017</span>
+
+              <p class="timeline-text">
+                Specialized in Graphic Design, focusing on visual composition, typography, and professional design principles
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Freelance Web & Graphic Design</h4>
+
+              <span>2018 — Present</span>
+
+              <p class="timeline-text">
+                Over 5 years of experience in mastering modern web and marketing technologies. Specialized in building high-performing E-commerce solutions (WordPress & OpenCart) and creating conversion-driven product imagery tailored for the Bulgarian market. Expert in AI-driven content creation and professional video editing for digital marketing, focused on turning visitors into customers.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Certified Marketing Specialist & Web Designer</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                Professional certification through EU-funded "Youth Employment" programs. Specialized in modern Digital Marketing strategies and professional Web Design standards.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+  <h4 class="h4 timeline-item-title">Junior Web Designer & Developer — BNM Zdrave</h4>
+
+  <span>2018 — 2022</span> <p class="timeline-text">
+    Completely developed the company's official website from scratch using WordPress. 
+    Managed ongoing technical maintenance and security updates while designing and 
+    executing digital marketing strategies, including high-converting creative assets 
+    and campaign visuals.
+  </p>
+
+</li>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Designer & E-commerce Specialist — Slot LTD</h4>
+
+              <span>2024 — 2025</span>
+
+              <p class="timeline-text">
+                Expanded my expertise by delivering professional web solutions using WordPress 
+                while gaining practical experience in building and managing OpenCart e-commerce stores. 
+                Focused on creating high-quality visual content and maintaining functional, 
+                user-friendly websites for diverse business needs.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Head of Digital Agency & Marketing Specialist — Slot LTD</h4>
+
+              <span>2025 — Present</span>
+
+              <p class="timeline-text">
+                Successfully established and led an internal digital agency within the company. 
+                Managed the full lifecycle of client projects, from end-to-end WordPress & OpenCart 
+                website development to creating comprehensive digital marketing strategies and 
+                high-impact visual content.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Marketing Strategy</h5>
+                <data value="50">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">OpenCart</h5>
+                <data value="50">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Design & Dev</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Full Visual Identity</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Graphic Design</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Design & Dev</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Full Visual Identity</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Graphic Design</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web design & dev">
+              <a href="https://famatelbulgaria.com/" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.webp" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Famatel Bulgaria</h3>
+
+                <p class="project-category">Web Design & Dev</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design & dev">
+              <a href="https://rimplovdiv.com/" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.webp" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Regional History Museum, Plovdiv</h3>
+
+                <p class="project-category">Web Design & Dev</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full visual identity">
+              <a href="https://damatrix.eu/" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.webp" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Digital Agency Matrix</h3>
+
+                <p class="project-category">Full Visual Identity</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="graphic design">
+
+  <a href="./assets/images/project-7.webp" data-fslightbox="amazon-summary-gallery" data-type="image">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/project-7.webp" alt="summary" loading="lazy">
+    </figure>
+
+    <h3 class="project-title">Dahua</h3>
+    <p class="project-category">Graphic Design</p>
+  </a>
+
+  <a href="./assets/images/project-7-1.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
+  <a href="./assets/images/project-7-2.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
+  <a href="./assets/images/project-7-3.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
+  <a href="./assets/images/project-7-4.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
+  <a href="./assets/images/project-7-5.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
+  <a href="./assets/images/project-7-6.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
+</li>
+            
+            <li class="project-item  active" data-filter-item data-category="web design & dev">
+              <a href="topclip.eu" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.webp" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Top Clip</h3>
+
+                <p class="project-category">Web Design & Dev</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full visual identity">
+              <a href="https://evropro.eu/" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.webp" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Evropro</h3>
+
+                <p class="project-category">Full Visual Identity</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full visual identity">
+              <a href="https://ofipro.bg/" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.webp" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ofipro</h3>
+
+                <p class="project-category">Full Visual Identity</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full visual identity">
+              <a href="https://slot.bg/" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.webp" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Slot</h3>
+
+                <p class="project-category">Full Visual Identity</p>
+
+              </a>
+            </li>
+
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47345.54284693951!2d24.707579606821217!3d42.14915878433433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd108a2487351%3A0x400a01269bf4f60!2z0J_Qu9C-0LLQtNC40LI!5e0!3m2!1sbg!2sbg!4v1707400000000!5m2!1sbg!2sbg"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-info-central">
+  <h3 class="h3 form-title">Let's work together!</h3>
+  
+<ul class="contact-list">
+  
+  <li class="contact-item" style="margin-bottom: 25px; display: flex; align-items: center; gap: 15px;">
+    <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+    <div class="contact-info">
+      <p class="contact-title" style="margin-bottom: 2px;">Email</p>
+      <a href="mailto:dikliev.n@gmail.com" class="contact-link">dikliev.n@gmail.com</a>
+    </div>
+  </li>
+
+  <li class="contact-item" style="display: flex; align-items: center; gap: 15px;">
+    <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+    <div class="contact-info">
+      <p class="contact-title" style="margin-bottom: 2px;">Phone</p>
+      <a href="tel:+359988945416" class="contact-link">+359 988 945 416</a>
+    </div>
+  </li>
+
+</ul>
+</section>
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+   <script src="./assets/js/fslightbox.js"></script>
+
+   <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -143,3 +143,65 @@ input::placeholder, textarea::placeholder{
   border-radius: 20px;
 }
 *::-webkit-scrollbar-thumb:hover{ background: var(--accent-2); }
+
+
+
+
+/* Fix cards readability on dark theme */
+
+.content-card,
+.service-item,
+.testimonials-item,
+.clients-item a,
+.resume-item,
+.skill-progress-bg,
+.skills-item,
+.blog-post-item > a,
+.project-item > a,
+.contact-item,
+.form-input,
+.form-textarea {
+  background: #1d1d1f !important;
+  border: 1px solid #2b2b2e !important;
+  color: #f2f2f2 !important;
+}
+
+.content-card p,
+.service-item p,
+.testimonials-text p,
+.about-text p,
+.resume-text,
+.skill-title,
+.contact-info :is(p, a, time),
+.form-input,
+.form-textarea {
+  color: #cfcfcf !important;
+}
+
+.h3,
+.h4,
+.h5,
+.article-title,
+.service-title,
+.testimonials-title,
+.clients-title,
+.section-title {
+  color: #ffffff !important;
+}
+
+/* Make accent gold */
+a,
+.navbar-link.active,
+.navbar-link:hover,
+.icon-box,
+.social-link i {
+  color: #f2c14e !important;
+}
+
+/* Remove washed out look */
+.service-icon-box img,
+.testimonials-avatar-box img {
+  opacity: 1 !important;
+  filter: none !important;
+}
+

@@ -2,1024 +2,1099 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vCard - Personal Portfolio</title>
 
-  <!--
+    <!--
     - favicon
   -->
-<link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
- 
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 
 
 
-  <!--
+
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!--
+    <!--
     - #MAIN
   -->
 
-  <main>
+    <main>
 
-    <!--
+        <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+        <aside class="sidebar" data-sidebar>
 
-      <div class="sidebar-info">
+            <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Fatima Syed" width="80">
-        </figure>
+                <figure class="avatar-box">
+                    <img src="./assets/images/my-avatar.png" alt="Fatima Syed" width="80" height="80">
+                </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Fatima Syed">Fatima Syed</h1>
+                <div class="info-content">
+                    <h1 class="name" title="Fatima Syed">Fatima Syed</h1>
 
-          <p class="title">Digital Marketer</p>
+                    <p class="title">Digital Marketer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:fatimasyed.digitalmarketer@gmail.com"
+                                class="contact-link">fatimasyed.digitalmarketer@gmail.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">LinkedIn</p>
+
+                            <a href="https://www.linkedin.com/in/fatimasyedbukhari/" class="contact-link"
+                                target="_blank" rel="noopener">
+                                linkedin.com/in/fatimasyedbukhari
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="1998-03-23">April 17, 2006</time>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Abbottabad, KPK, Pakistan</address>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+
+
+
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/fatimasyedbukhari/" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://github.com/SyedaRabailFatima" class="social-link" target="_blank"
+                            rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+
+
+
+        <!--
+      - #main-content
+    -->
+
+        <div class="main-content">
+
+            <!--
+        - #NAVBAR
+      -->
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+
+
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+
+
+
+            <!--
+        - #ABOUT
+      -->
+
+            <article class="about  active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        I’m Fatima Syed, a Digital Marketer focused on SEO and performance marketing (Google Ads and
+                        Meta Ads).
+                        I help businesses generate leads and sales by combining search optimization with conversion
+                        focused campaigns.
+                    </p>
+
+                    <p>
+                        I handle campaign setup and optimization, and I implement GA4, GTM, and Meta Pixel so tracking
+                        is accurate and
+                        results are measurable. My work covers keyword research, SEO improvements, ad testing, creative
+                        and copy direction,
+                        and data driven optimization.
+                    </p>
+
+                    <p>If you want support with SEO, Google Ads, or Meta Ads, message me with your website link and your
+                        goal (leads or sales).
+                        I will share clear next steps you can act on.
+                    </p>
+
+                </section>
+
+
+                <!--
+          - service
+        -->
+
+                <section class="service">
+
+                    <h3 class="h3 service-title">What i'm doing</h3>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Performance Marketing</h4>
+
+                                <p class="service-item-text">
+                                    Meta and Google campaigns focused on leads and sales, with structured testing and
+                                    optimization.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">SEO and Content Strategy</h4>
+
+                                <p class="service-item-text">
+                                    Keyword research, On & Off page SEO, Blog & Guest Posting, and content plans that
+                                    target search intent.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Social Media Marketing & Video Marketing</h4>
+
+                                <p class="service-item-text">
+                                    I handle content ideas, post design, reels and short form videos,
+                                    captions, scheduling, and publishing end to end to keep your brand consistent and
+                                    active.</p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Tracking and Analytics</h4>
+
+                                <p class="service-item-text">
+                                    GA4, Google Tag Manager (GTM), and Meta Pixel setup to track leads and purchases
+                                    accurately,
+                                    so campaigns are optimized on real conversions.
+                                </p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+                <!--
+          - testimonials
+        -->
+
+                <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Recommendations</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-1.png" alt="LinkedIn" width="40"
+                                        data-testimonials-avatar>
+                                </figure>
+
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                    Zia ur Rehman
+                                </h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p><b>CEO, Codenastic</b></p>
+                                    <p>
+                                        It’s an absolute pleasure to write about Fatima, one of the most dedicated,
+                                        hardworking, and talented colleagues I’ve had the opportunity to work with. I
+                                        had the chance to work directly with her, and I’ve always found her to be
+                                        incredibly cooperative, reliable, and team-oriented.
+                                        Fatima is not only skilled but also humble in her approach. She accepts feedback
+                                        and constructive criticism with grace and professionalism, always using it as an
+                                        opportunity to improve. No matter what assignment she’s given, she consistently
+                                        delivers high-quality results, and you can fully rely on her ability to handle
+                                        tasks efficiently and thoughtfully.
+                                        What’s even more admirable is her eagerness to learn. She stays updated with the
+                                        latest tools and technologies and continually strives to grow. Her strong work
+                                        ethic, positive attitude, and willingness to support her team make her an
+                                        absolute asset to any organization.
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-3.png" alt="LinkedIn" width="40"
+                                        data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                    Junaid Mir
+                                </h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p><b>Digital Marketing Team Lead</b></p>
+                                    <p>
+                                        Fatima works with clarity and discipline. Amazing work in the digital marketing
+                                        field. highly recommended!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-2.png" alt="LinkedIn" width="40"
+                                        data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                    Khansa Nadeem
+                                </h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p><b>Digital Marketing Lead, CODENASTIC</b></p>
+                                    <p>
+                                        I had the chance to mentor Fatima from her first week and watched her grow into
+                                        a confident Google Ads and Meta Ads specialist. She plans campaigns
+                                        thoughtfully, aligns creatives with audiences, sets up pixels, events, and
+                                        conversions correctly, and keeps budgets and pacing on track. She handles client
+                                        queries with ease and now manages client ad accounts end to end.
+                                        Highly recommended!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </section>
+
+
+                <div class="modal-container" data-modal-container>
+
+                    <div class="overlay" data-overlay></div>
+
+                    <section class="testimonials-modal">
+
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="./assets/images/avatar-1.png" alt="Software Icon" width="80" data-modal-img>
+                            </figure>
+
+                        </div>
+
+                        <div class="modal-content">
+
+                            <h4 class="h3 modal-title" data-modal-title>Software Name</h4>
+
+                            <div data-modal-text>
+                                <p>
+                                    The description of your skills and tools will appear here.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+                <!--
+          - clients
+        -->
+
+                <section class="clients">
+
+                    <h3 class="h3 clients-title">Clients</h3>
+
+                    <ul class="clients-list has-scrollbar">
+
+                        <li class="clients-item">
+                            <a href="https://www.indoorsunhydro.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/Logo-1.png" alt="Famatel Bulgaria">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="https://www.ppcadeditor.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/Logo-2.svg" alt="RIM Plovdiv">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="https://favenlighting.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/Logo-3.avif" alt="Ofipro">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="https://lagardensupply.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/Logo-4.svg" alt="Slot.bg">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="https://renewfunction.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/Logo-6.png" alt="Client 6">
+                            </a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="https://laparlifestyle.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/Logo-5.avif" alt="Client 5">
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+        - #RESUME
+      -->
+
+            <article class="resume" data-page="resume">
+
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">FG, girls Inter College Abbottabad</h4>
+
+                            <span>2021 — 2023</span>
+
+                            <p class="timeline-text">
+                                Studied core subjects with a focus on building a strong academic foundation for software
+                                and technology. </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">COMSATS University Islamabad, Abbottabad Campus</h4>
+
+                            <span>2024 — Present</span>
+
+                            <p class="timeline-text">
+                                Focused on software development, web technologies, and project-based work, with a strong
+                                interest in marketing and growth.
+                                During my academic years, I participated in diverse extracurriculars. In school, I
+                                engaged in debate and environmental clubs, while in college, I contributed to the
+                                computer science society and served as student council treasurer. These experiences
+                                nurtured skills in communication, leadership, organization, and furthered my proficiency
+                                in computer skills.
+                                Software engineering demands proficiency in programming and problem-solving,
+                                collaboration within cross-functional teams, adaptability to evolving technologies,
+                                meticulous attention to detail for code reliability, effective communication with
+                                stakeholders, basic project management skills, and a commitment to continuous learning
+                                for professional growth. </p>
+
+                        </li>
+
+
+
+                    </ol>
+
+                </section>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Diploma in Information Technology (DIT) </h4>
+
+                            <span>Oct 2022 — Sep 2023</span>
+
+                            <p class="timeline-text">
+                                Completed hands on training in computer fundamentals, MS Office, and basic web concepts
+                                with practical assignments.
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">SEO & Digital marketing at Eagle Web Solution
+                            </h4>
+
+                            <span>Sep 2023 — Jan 2025 </span>
+
+                            <p class="timeline-text">
+                                My part-time internship at Eagle Web Solutions provided extensive project-based learning
+                                and hands-on experience in web development, database management, and software testing.
+                                Collaborating with the team enhanced my communication and problem-solving skills, while
+                                working in a professional environment taught me effective time management and meeting
+                                deadlines. Overall, the experience significantly contributed to my professional growth
+                                in the field.
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Digital Marketing Intern at URRAAN - Runway to Digital
+                                Flight </h4>
+
+                            <span>Mar 2024 — May 2024</span>
+                            <p class="timeline-text">
+                                At Urraan, my internship immersed me in digital marketing, providing hands-on experience
+                                across various areas. Over 2 Months, I actively contributed to:
+
+                                Crafting SEO-optimized content for digital platforms.
+                                Managing social media presence, driving engagement and growth.
+                                Planning, executing, and analyzing email marketing campaigns.
+                                Utilizing analytics tools for data-driven decision-making.
+                                Conducting market research and collaborating on integrated campaigns.
+                                This experience equipped me with essential skills and insights, preparing me for
+                                impactful contributions in digital marketing roles.
+                            </p>
+
+                        </li>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Digital Marketing & SEO at National Vocational and
+                                Technical Training Commission NAVTTC </h4>
+
+                            <span>May 2024 — Jul 2024</span>
+
+                            <p class="timeline-text">
+                                As a digital marketer and SEO specialist, I led a successful SEO overhaul for a
+                                mid-sized e-commerce brand. Conducting a thorough audit, I devised a targeted strategy
+                                focusing on technical optimizations, content enhancements, and strategic link building.
+                                Through meticulous execution and data-driven insights, we witnessed a significant
+                                increase in organic traffic, keyword rankings, and ultimately, revenue. This experience
+                                reinforced the importance of adaptability and data-driven decision-making in achieving
+                                tangible results in the digital realm.
+                            </p>
+
+                        </li>
+
+
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Digital Marketer And SEO Manager At Kawiish
+                            </h4>
+
+                            <span>May 2024 — Aug 2024 </span>
+
+                            <p class="timeline-text">
+                                ln my role as a digital marketing and SEO specialist, I spearheaded a local SEO campaign
+                                for a multi-location service provider. By optimizing Google Business Profiles,
+                                implementing location-specific landing pages, and leveraging localized content
+                                strategies, we achieved a dramatic uplift in local search visibility and lead
+                                generation. The campaign not only boosted foot traffic and conversions but also
+                                emphasized the value of precision targeting and continuous performance monitoring in a
+                                competitive market. </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Digital Marketer At CODENASTIC
+                            </h4>
+
+                            <span>Aug 2024 — Present </span>
+
+                            <p class="timeline-text">
+                                As a Digital Marketer at Codenastic, I leveraged data-driven strategies to enhance brand
+                                visibility, manage PPC campaigns, and optimize SEO for diverse projects. My role
+                                involved running targeted ad campaigns across Google Ads, social media, and various
+                                digital platforms to drive qualified traffic and boost conversions. I worked closely
+                                with cross-functional teams to ensure the seamless execution of marketing initiatives,
+                                performed in-depth market analysis, and utilized analytics tools to monitor campaign
+                                performance. My efforts resulted in improved ROI and increased customer engagement for
+                                Codenastic's clients.
+                        </li>
+
+
+                    </ol>
+
+                </section>
+
+                <section class="skill">
+
+                    <h3 class="h3 skills-title">My skills</h3>
+
+                    <ul class="skills-list content-card">
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Google Ads</h5>
+                                <data value="80">95%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 85%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Meta Ads</h5>
+                                <data value="70">90%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">SEO and Content Strategy</h5>
+                                <data value="90">95%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Social Media Marketing & Video Marketing</h5>
+                                <data value="50">85%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Lead Generation</h5>
+                                <data value="50">80%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 85%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">WordPress</h5>
+                                <data value="50">75%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 75%;"></div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+        - #PORTFOLIO
+      -->
+
+            <article class="portfolio" data-page="portfolio">
+
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+
+                    <ul class="filter-list">
+
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Web Design & Dev</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Full Visual Identity</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Graphic Design</button>
+                        </li>
+
+                    </ul>
+
+                    <div class="filter-select-box">
+
+                        <button class="filter-select" data-select>
+
+                            <div class="select-value" data-selecct-value>Select category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+
+                        </button>
+
+                        <ul class="select-list">
+
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Web Design & Dev</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Full Visual Identity</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Graphic Design</button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <ul class="project-list">
+
+                        <li class="project-item  active" data-filter-item data-category="web design & dev">
+                            <a href="https://famatelbulgaria.com/" target="_blank" rel="noopener noreferrer">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-1.webp" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Famatel Bulgaria</h3>
+
+                                <p class="project-category">Web Design & Dev</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web design & dev">
+                            <a href="https://rimplovdiv.com/" target="_blank" rel="noopener noreferrer">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-2.webp" alt="orizon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Regional History Museum, Plovdiv</h3>
+
+                                <p class="project-category">Web Design & Dev</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="full visual identity">
+                            <a href="https://damatrix.eu/" target="_blank" rel="noopener noreferrer">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-8.webp" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Digital Agency Matrix</h3>
+
+                                <p class="project-category">Full Visual Identity</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+
+                            <a href="./assets/images/7-6.webp" data-fslightbox="amazon-summary-gallery"
+                                data-type="image">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/7-6.webp" alt="summary" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Product Listing</h3>
+                                <p class="project-category">Graphic Design</p>
+                            </a>
+
+                            <a href="./assets/images/7.webp" data-fslightbox="amazon-summary-gallery" data-type="image"
+                                style="display:none;"></a>
+                            <a href="./assets/images/7-1.webp" data-fslightbox="amazon-summary-gallery"
+                                data-type="image" style="display:none;"></a>
+                            <a href="./assets/images/7-2.webp" data-fslightbox="amazon-summary-gallery"
+                                data-type="image" style="display:none;"></a>
+                            <a href="./assets/images/7-3.webp" data-fslightbox="amazon-summary-gallery"
+                                data-type="image" style="display:none;"></a>
+                            <a href="./assets/images/7-4.webp" data-fslightbox="amazon-summary-gallery"
+                                data-type="image" style="display:none;"></a>
+                            <a href="./assets/images/7-5.webp" data-fslightbox="amazon-summary-gallery"
+                                data-type="image" style="display:none;"></a>
+                            <a href="./assets/images/7-6.webp" data-fslightbox="amazon-summary-gallery"
+                                data-type="image" style="display:none;"></a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web design & dev">
+                            <a href="topclip.eu" target="_blank" rel="noopener noreferrer">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-3.webp" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Top Clip</h3>
+
+                                <p class="project-category">Web Design & Dev</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="full visual identity">
+                            <a href="https://evropro.eu/" target="_blank" rel="noopener noreferrer">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-4.webp" alt="brawlhalla" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Evropro</h3>
+
+                                <p class="project-category">Full Visual Identity</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="full visual identity">
+                            <a href="https://ofipro.bg/" target="_blank" rel="noopener noreferrer">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-5.webp" alt="dsm." loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Ofipro</h3>
+
+                                <p class="project-category">Full Visual Identity</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="full visual identity">
+                            <a href="https://slot.bg/" target="_blank" rel="noopener noreferrer">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-6.webp" alt="metaspark" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Slot</h3>
+
+                                <p class="project-category">Full Visual Identity</p>
+
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+            <!--
+        - #CONTACT
+      -->
+
+            <article class="contact" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105628.07487326526!2d73.15353859891674!3d34.17505361371023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de3111557ac517%3A0x6e59a635b12e952c!2sAbbottabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1771328358350!5m2!1sen!2s"
+                            width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+
+
+                <h3 class="h3 form-title"></h3>
+
+
+                <section class="contact-form">
+
+                    <h3 class="h3 form-title"> Let's work together!</h3>
+                    <h4 class="h4 form-title">Contact Form</h4>
+                    <form action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST" class="form" data-form>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required
+                                data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required
+                                data-form-input>
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required
+                            data-form-input></textarea>
+
+                        <button class="form-btn" type="submit">
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+
+                    </form>
+
+                </section>
+
+
+
+            </article>
+
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+    </main>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:fatimasyed.digitalmarketer@gmail.com" class="contact-link">fatimasyed.digitalmarketer@gmail.com</a>
-            </div>
-
-          </li>
-
-         <li class="contact-item">
-  <div class="icon-box">
-    <ion-icon name="logo-linkedin"></ion-icon>
-  </div>
-
-  <div class="contact-info">
-    <p class="contact-title">LinkedIn</p>
-
-    <a href="https://www.linkedin.com/in/fatimasyedbukhari/" class="contact-link" target="_blank" rel="noopener">
-      linkedin.com/in/fatimasyedbukhari
-    </a>
-  </div>
-</li>
-
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1998-03-23">April 17, 2006</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Abbottabad, KPK, Pakistan</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          
-
-         <li class="social-item">
-            <a href="https://www.linkedin.com/in/fatimasyedbukhari/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-           <li class="social-item">
-    <a
-      href="https://github.com/SyedaRabailFatima"
-      class="social-link"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="GitHub profile"
-      title="GitHub">
-      <ion-icon name="logo-github"></ion-icon>
-    </a>
-  </li>
-        </ul>
-
-      </div>
-
-    </aside>
 
 
 
 
 
     <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-        
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-           I’m Fatima Syed, a Digital Marketer focused on SEO and performance marketing (Google Ads and Meta Ads). 
-           I help businesses generate leads and sales by combining search optimization with conversion focused campaigns.
-          </p>
-
-          <p>
-          I handle campaign setup and optimization, and I implement GA4, GTM, and Meta Pixel so tracking is accurate and 
-            results are measurable. My work covers keyword research, SEO improvements, ad testing, creative and copy direction, 
-            and data driven optimization.
-          </p>
-          
-          <p>If you want support with SEO, Google Ads, or Meta Ads, message me with your website link and your goal (leads or sales). 
-             I will share clear next steps you can act on.
-          </p>
-        
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Performance Marketing</h4>
-
-                <p class="service-item-text">
-                  Meta and Google campaigns focused on leads and sales, with structured testing and optimization.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">SEO and Content Strategy</h4>
-
-                <p class="service-item-text">
-                  Keyword research, On & Off  page SEO, Blog & Guest Posting, and content plans that target search intent.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Social Media Marketing & Video Marketing</h4>
-
-                <p class="service-item-text">
-                  I handle content ideas, post design, reels and short form videos, 
-                  captions, scheduling, and publishing end to end to keep your brand consistent and active.</p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Tracking and Analytics</h4>
-
-                <p class="service-item-text">
-                  GA4, Google Tag Manager (GTM), and Meta Pixel setup to track leads and purchases accurately,
-                  so campaigns are optimized on real conversions.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-<section class="testimonials">
-  <h3 class="h3 testimonials-title">Recommendations</h3>
-
-  <ul class="testimonials-list has-scrollbar">
-
-<li class="testimonials-item">
-    <div class="content-card" data-testimonials-item>
-    <figure class="testimonials-avatar-box">
-  <img src="./assets/images/avatar-1.png" alt="LinkedIn" width="40" data-testimonials-avatar>
-</figure>
-
-
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      Zia ur Rehman
-    </h4>
-
-    <div class="testimonials-text" data-testimonials-text>
-      <p><b>CEO, Codenastic</b></p>
-      <p>
-        It’s an absolute pleasure to write about Fatima, one of the most dedicated, hardworking, and talented colleagues I’ve had the opportunity to work with. I had the chance to work directly with her, and I’ve always found her to be incredibly cooperative, reliable, and team-oriented.
-        Fatima is not only skilled but also humble in her approach. She accepts feedback and constructive criticism with grace and professionalism, always using it as an opportunity to improve. No matter what assignment she’s given, she consistently delivers high-quality results, and you can fully rely on her ability to handle tasks efficiently and thoughtfully.
-        What’s even more admirable is her eagerness to learn. She stays updated with the latest tools and technologies and continually strives to grow. Her strong work ethic, positive attitude, and willingness to support her team make her an absolute asset to any organization.
-      </p>
-    
-
-    </div>
-  </div>
-</li>
-
- <li class="testimonials-item">
-  <div class="content-card" data-testimonials-item>
-    <figure class="testimonials-avatar-box">
-<img src="./assets/images/avatar-3.png" alt="LinkedIn" width="40" data-testimonials-avatar>
-    </figure>
-
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      Junaid Mir
-    </h4>
-
-    <div class="testimonials-text" data-testimonials-text>
-      <p><b>Digital Marketing Team Lead</b></p>
-      <p>
-        Fatima works with clarity and discipline. Amazing work in the digital marketing field. highly recommended!
-      </p>
-    </div>
-  </div>
-</li>
-   
-    
-    
-    <li class="testimonials-item">
-  <div class="content-card" data-testimonials-item>
-    <figure class="testimonials-avatar-box">
-<img src="./assets/images/avatar-2.png" alt="LinkedIn" width="40" data-testimonials-avatar>
-    </figure>
-
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      Khansa Nadeem
-    </h4>
-
-    <div class="testimonials-text" data-testimonials-text>
-      <p><b>Digital Marketing Lead, CODENASTIC</b></p>
-      <p>
-       I had the chance to mentor Fatima from her first week and watched her grow into a confident Google Ads and Meta Ads specialist. She plans campaigns thoughtfully, aligns creatives with audiences, sets up pixels, events, and conversions correctly, and keeps budgets and pacing on track. She handles client queries with ease and now manages client ad accounts end to end.
-       Highly recommended!
-      </p>
-    </div>
-  </div>
-</li>
-
-
-  </ul>
-</section>
-
-
-<div class="modal-container" data-modal-container>
-
-  <div class="overlay" data-overlay></div>
-
-  <section class="testimonials-modal">
-
-    <button class="modal-close-btn" data-modal-close-btn>
-      <ion-icon name="close-outline"></ion-icon>
-    </button>
-
-    <div class="modal-img-wrapper">
-      <figure class="modal-avatar-box">
-        <img src="./assets/images/avatar-1.png" alt="Software Icon" width="80" data-modal-img>
-      </figure>
-
-      </div>
-
-    <div class="modal-content">
-
-      <h4 class="h3 modal-title" data-modal-title>Software Name</h4>
-
-      <div data-modal-text>
-        <p>
-          The description of your skills and tools will appear here.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-</div>
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-           <li class="clients-item">
-  <a href="https://www.indoorsunhydro.com/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/images/Logo-1.png" alt="Famatel Bulgaria">
-  </a>
-</li>
-
-<li class="clients-item">
-  <a href="https://www.ppcadeditor.com/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/images/Logo-2.svg" alt="RIM Plovdiv">
-  </a>
-</li>
-
-<li class="clients-item">
-  <a href="https://favenlighting.com/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/images/Logo-3.avif" alt="Ofipro">
-  </a>
-</li>
-
-<li class="clients-item">
-  <a href="https://lagardensupply.com/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/images/Logo-4.svg" alt="Slot.bg">
-  </a>
-</li>
-
-<li class="clients-item">
-  <a href="https://renewfunction.com/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/images/Logo-6.png" alt="Client 6">
-  </a>
-</li>
-            
-<li class="clients-item">
-  <a href="https://laparlifestyle.com/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/images/Logo-5.avif" alt="Client 5">
-  </a>
-</li>
-            
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">FG, girls Inter College Abbottabad</h4>
-
-              <span>2021 — 2023</span>
-
-              <p class="timeline-text">
-  Studied core subjects with a focus on building a strong academic foundation for software and technology.              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">COMSATS University Islamabad, Abbottabad Campus</h4>
-
-              <span>2024 — Present</span>
-
-              <p class="timeline-text">
-      Focused on software development, web technologies, and project-based work, with a strong interest in marketing and growth.
-      During my academic years, I participated in diverse extracurriculars. In school, I engaged in debate and environmental clubs, while in college, I contributed to the computer science society and served as student council treasurer. These experiences nurtured skills in communication, leadership, organization, and furthered my proficiency in computer skills.
-      Software engineering demands proficiency in programming and problem-solving, collaboration within cross-functional teams, adaptability to evolving technologies, meticulous attention to detail for code reliability, effective communication with stakeholders, basic project management skills, and a commitment to continuous learning for professional growth.              </p>
-
-            </li>
-
-        
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Diploma in Information Technology (DIT) </h4>
-
-              <span>Oct 2022 — Sep 2023</span>
-
-              <p class="timeline-text">
-                Completed hands on training in computer fundamentals, MS Office, and basic web concepts with practical assignments.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">SEO & Digital marketing at Eagle Web Solution
-            </h4>
-
-              <span>Sep 2023 — Jan 2025 </span>
-
-              <p class="timeline-text">
-                My part-time internship at Eagle Web Solutions provided extensive project-based learning and hands-on experience in web development, database management, and software testing. Collaborating with the team enhanced my communication and problem-solving skills, while working in a professional environment taught me effective time management and meeting deadlines. Overall, the experience significantly contributed to my professional growth in the field.
-              </p>
-
-            </li>
-            
-            <li class="timeline-item">
-
-  <h4 class="h4 timeline-item-title">Digital Marketing Intern at URRAAN - Runway to Digital Flight </h4>
-
-  <span>Mar 2024 — May 2024</span> <p class="timeline-text">
-    At Urraan, my internship immersed me in digital marketing, providing hands-on experience across various areas. Over 2 Months, I actively contributed to:
-
-Crafting SEO-optimized content for digital platforms.
-Managing social media presence, driving engagement and growth.
-Planning, executing, and analyzing email marketing campaigns.
-Utilizing analytics tools for data-driven decision-making.
-Conducting market research and collaborating on integrated campaigns.
-This experience equipped me with essential skills and insights, preparing me for impactful contributions in digital marketing roles.
-  </p>
-
-</li>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Digital Marketing & SEO at National Vocational and Technical Training Commission NAVTTC </h4>
-
-              <span>May 2024 — Jul 2024</span>
-
-              <p class="timeline-text">
-                As a digital marketer and SEO specialist, I led a successful SEO overhaul for a mid-sized e-commerce brand. Conducting a thorough audit, I devised a targeted strategy focusing on technical optimizations, content enhancements, and strategic link building. Through meticulous execution and data-driven insights, we witnessed a significant increase in organic traffic, keyword rankings, and ultimately, revenue. This experience reinforced the importance of adaptability and data-driven decision-making in achieving tangible results in the digital realm.
-              </p>
-
-            </li>
-
-            
-
-             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Digital Marketer And SEO Manager At Kawiish
-            </h4>
-
-              <span>May 2024 — Aug 2024 </span>
-
-              <p class="timeline-text">
-ln my role as a digital marketing and SEO specialist, I spearheaded a local SEO campaign for a multi-location service provider. By optimizing Google Business Profiles, implementing location-specific landing pages, and leveraging localized content strategies, we achieved a dramatic uplift in local search visibility and lead generation. The campaign not only boosted foot traffic and conversions but also emphasized the value of precision targeting and continuous performance monitoring in a competitive market.              </p>
-
-            </li>
-
-              <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Digital Marketer At CODENASTIC 
-            </h4>
-
-              <span>Aug 2024 — Present </span>
-
-              <p class="timeline-text">
-              As a Digital Marketer at Codenastic, I leveraged data-driven strategies to enhance brand visibility, manage PPC campaigns, and optimize SEO for diverse projects. My role involved running targeted ad campaigns across Google Ads, social media, and various digital platforms to drive qualified traffic and boost conversions. I worked closely with cross-functional teams to ensure the seamless execution of marketing initiatives, performed in-depth market analysis, and utilized analytics tools to monitor campaign performance. My efforts resulted in improved ROI and increased customer engagement for Codenastic's clients.
-            </li>
-
-            
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Google Ads</h5>
-                <data value="80">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Meta Ads</h5>
-                <data value="70">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SEO and Content Strategy</h5>
-                <data value="90">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Social Media Marketing & Video Marketing</h5>
-                <data value="50">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Lead Generation</h5>
-                <data value="50">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web Design & Dev</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Full Visual Identity</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Graphic Design</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web Design & Dev</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Full Visual Identity</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Graphic Design</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web design & dev">
-              <a href="https://famatelbulgaria.com/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.webp" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Famatel Bulgaria</h3>
-
-                <p class="project-category">Web Design & Dev</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design & dev">
-              <a href="https://rimplovdiv.com/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.webp" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Regional History Museum, Plovdiv</h3>
-
-                <p class="project-category">Web Design & Dev</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="full visual identity">
-              <a href="https://damatrix.eu/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.webp" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Digital Agency Matrix</h3>
-
-                <p class="project-category">Full Visual Identity</p>
-
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="graphic design">
-
-  <a href="./assets/images/7-6.webp" data-fslightbox="amazon-summary-gallery" data-type="image">
-    <figure class="project-img">
-      <div class="project-item-icon-box">
-        <ion-icon name="eye-outline"></ion-icon>
-      </div>
-      <img src="./assets/images/7-6.webp" alt="summary" loading="lazy">
-    </figure>
-
-    <h3 class="project-title">Product Listing</h3>
-    <p class="project-category">Graphic Design</p>
-  </a>
-
-  <a href="./assets/images/7.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>            
-  <a href="./assets/images/7-1.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>          
-  <a href="./assets/images/7-2.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
-  <a href="./assets/images/7-3.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
-  <a href="./assets/images/7-4.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
-  <a href="./assets/images/7-5.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
-  <a href="./assets/images/7-6.webp" data-fslightbox="amazon-summary-gallery" data-type="image" style="display:none;"></a>
-</li>
-            
-            <li class="project-item  active" data-filter-item data-category="web design & dev">
-              <a href="topclip.eu" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.webp" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Top Clip</h3>
-
-                <p class="project-category">Web Design & Dev</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="full visual identity">
-              <a href="https://evropro.eu/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.webp" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Evropro</h3>
-
-                <p class="project-category">Full Visual Identity</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="full visual identity">
-              <a href="https://ofipro.bg/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.webp" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ofipro</h3>
-
-                <p class="project-category">Full Visual Identity</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="full visual identity">
-              <a href="https://slot.bg/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.webp" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Slot</h3>
-
-                <p class="project-category">Full Visual Identity</p>
-
-              </a>
-            </li>
-
-            
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105628.07487326526!2d73.15353859891674!3d34.17505361371023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de3111557ac517%3A0x6e59a635b12e952c!2sAbbottabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1771328358350!5m2!1sen!2s"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-       
-  <h3 class="h3 form-title"></h3>
-
-
-<section class="contact-form">
-
-  <h3 class="h3 form-title"> Let's work together!</h3>
-<h4 class="h4 form-title">Contact Form</h4>
-  <form action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST" class="form" data-form>
-
-    <div class="input-wrapper">
-      <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-      <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-    </div>
-
-    <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-    <button class="form-btn" type="submit">
-      <ion-icon name="paper-plane"></ion-icon>
-      <span>Send Message</span>
-    </button>
-
-  </form>
-
-</section>
-
-
-        
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
     - custom js link
   -->
-   <script src="./assets/js/fslightbox.js"></script>
+    <script src="./assets/js/fslightbox.js"></script>
 
-   <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

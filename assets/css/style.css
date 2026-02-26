@@ -107,7 +107,30 @@
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
+  
+}
 
+/* Override: dark / terracotta theme (placed after original :root so it wins) */
+:root {
+  --bg-gradient-onyx: linear-gradient(to bottom right, #0b0f19 0%, #11151b 100%);
+  --bg-gradient-jet: linear-gradient(to bottom right, rgba(15,23,36,0.6) 0%, rgba(15,23,36,0) 100%), #0b0f19;
+  --border-gradient-onyx: linear-gradient(to bottom right, #F472B6 0%, rgba(255,255,255,0.06) 50%);
+  --text-gradient-yellow: linear-gradient(to right, #F472B6, #D946AA);
+
+  --jet: #0b0f19;
+  --onyx: #0f1724;
+  --eerie-black-1: #0b0d11;
+  --eerie-black-2: #11151b;
+  --smoky-black: #0b0f19;
+
+  --white-1: #e6e7ea;
+  --white-2: #cbd5d9;
+
+  --orange-yellow-crayola: #F472B6;
+  --vegas-gold: #D946AA;
+
+  --light-gray: #9AA0B1;
+  --light-gray-70: rgba(154,160,177,0.7);
 }
 
 
@@ -471,11 +494,11 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: oklab(88.937% 0.00683 -0.05387 / 0.75);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--jet);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)), var(--onyx);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.03);
   border-radius: 12px 12px 0 0;
-  box-shadow: var(--shadow-2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
   z-index: 5;
 }
 
@@ -488,16 +511,37 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--white-2);
   font-size: var(--fs-8);
-  padding: 20px 7px;
-  transition: color var(--transition-1);
+  padding: 18px 18px;
+  transition: color var(--transition-1), background var(--transition-1);
+  position: relative;
+  border-radius: 8px;
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus {
+  color: var(--white-1);
+  background: rgba(255,255,255,0.02);
+}
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active {
+  color: var(--orange-yellow-crayola);
+  background: transparent; /* remove selected background tint */
+  box-shadow: none;
+}
+
+.navbar-link.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 6px;
+  width: 24px;
+  height: 3px;
+  background: var(--orange-yellow-crayola);
+  border-radius: 2px;
+}
 
 
 
@@ -555,6 +599,18 @@ main {
 .service-icon-box { margin-bottom: 10px; }
 
 .service-icon-box img { margin: auto; }
+
+/* force service SVG icons to match the terracotta accent where possible.
+   Uses a colorizing filter which works best on single-color SVGs/monochrome icons. */
+.service-icon-box img {
+  /* colorize external SVG icons toward the theme pink accent */
+  filter: sepia(1) saturate(600%) hue-rotate(260deg) brightness(1) contrast(1);
+  transition: filter var(--transition-1);
+}
+
+.service-icon-box img:hover {
+  filter: sepia(1) saturate(900%) hue-rotate(260deg) brightness(1.05) contrast(1.02);
+}
 
 .service-content-box { text-align: center; }
 
@@ -1061,7 +1117,7 @@ main {
   width: 100%;
   border-radius: 16px;
   margin-bottom: 30px;
-  border: 1px solid var(--jet);
+  border: 1px solid rgba(244,114,182,0.08);
   overflow: hidden;
 }
 
@@ -1089,14 +1145,18 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   padding: 13px 20px;
-  border: 1px solid var(--jet);
+  border: 1px solid rgba(244,114,182,0.08); /* subtle pink border */
   border-radius: 14px;
   outline: none;
 }
 
 .form-input::placeholder { font-weight: var(--fw-500); }
 
-.form-input:focus { border-color: var(--orange-yellow-crayola); }
+.form-input:focus { 
+  border-color: var(--orange-yellow-crayola);
+  box-shadow: 0 6px 20px rgba(244,114,182,0.08);
+  outline: none;
+}
 
 textarea.form-input {
   min-height: 100px;
@@ -1107,6 +1167,11 @@ textarea.form-input {
 }
 
 textarea.form-input::-webkit-resizer { display: none; }
+textarea.form-input:focus { 
+  border-color: var(--orange-yellow-crayola);
+  box-shadow: 0 6px 20px rgba(244,114,182,0.08);
+  outline: none;
+}
 
 .form-input:focus:invalid { border-color: var(--bittersweet-shimmer); }
 
@@ -1811,4 +1876,25 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+/* enforce theme focus color (fix for browsers that show default white outline) */
+:focus {
+  outline-color: var(--orange-yellow-crayola) !important;
+  outline-style: auto;
+}
+
+input:focus,
+textarea:focus,
+.form-input:focus {
+  border-color: var(--orange-yellow-crayola) !important;
+  box-shadow: 0 8px 30px rgba(244,114,182,0.12);
+  outline: none;
+}
+
+/* remove the focus outline/halo for navbar buttons so active tab doesn't show rounded pink box */
+.navbar-link:focus,
+.navbar-link:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
 }
